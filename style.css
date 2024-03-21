@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pointer{
+    background-color: red;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    position:absolute;
+    z-index: 3;
+    left:0%;
+    top:0%;
+    transform: translate(-50%,-50%);
+    transition: transform 0.1s linear;
+}
+.page1{
+    height: 100vh;
+    width:100%;
+    background-color: salmon;
+    position:relative;
+    overflow: hidden;
+}
+.page2{
+    height: 50vh;
+    width:100%;
+    background-color: seagreen;
+}
+.circle{
+    background-color: seagreen;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    position:absolute;
+    left:0;
+    top:0;
+    transform: translate(-50%,-50%);
+    transition: transform 0.1s ease;
+
+}
+
+.circle:nth-child(1){
+    left:20%;
+    top:20%;
+    animation: mymove 12s linear 0.1s infinite alternate;
+}
+.circle:nth-child(2){
+    left:10%;
+    top:25%;
+    animation: mymove 13s linear 0.1s infinite alternate;
+}
+.circle:nth-child(3){
+    left:70%;
+    top:35%;
+    animation: mymove 12s linear 0.1s infinite alternate;
+}
+.circle:nth-child(4){
+    left:38%;
+    top:42%;
+    animation: mymove 11s linear 0.1s infinite alternate;
+}
+
+.circle:nth-child(5){
+    left:45%;
+    top:45%;
+    animation: mymove 5s linear 0.1s infinite alternate;
+}
+.circle:nth-child(6){
+    left:55%;
+    top:65%;
+    animation: mymove 9s linear 0.1s infinite alternate;
+}
+.circle:nth-child(7){
+    left:10%;
+    top:90%;
+    animation: mymove 8s linear 0.1s infinite alternate;
+}
+.circle:nth-child(8){
+    left:90%;
+    top:90%;
+    animation: mymove 6s linear 0.1s infinite alternate;
+}
+
+.circle:nth-child(9){
+    left:99%;
+    top:10%;
+    animation: mymove 3s linear 0.1s infinite alternate;
+}
+.circle:nth-child(10){
+    left:50%;
+    top:5%;
+    animation: mymove 4s linear 0.1s infinite alternate;
+}
+.circle:nth-child(11){
+    left:70%;
+    top:15%;
+    animation: mymove 7s linear 0.1s infinite alternate;
+}
+.circle:nth-child(12){
+    left:20%;
+    top:80%;
+    animation: mymove 8s linear 0.1s infinite alternate;
+
+}
+
+.circle:nth-child(13){
+    left:40%;
+    top:90%;
+    animation: mymove 12s linear 0.1s infinite alternate;
+
+}
+.circle:nth-child(14){
+    left:60%;
+    top:80%;
+    animation: mymove 21s linear 0.1s infinite alternate;
+
+}
+.circle:nth-child(15){
+    left:95%;
+    top:50%;
+    animation: mymove 10s linear 0.1s infinite alternate;
+
+}
+.circle:nth-child(16){
+    left:80%;
+    top:45%;
+    /* animation: mymove 5s infinite; */
+    animation: mymove 2s linear 0.1s infinite alternate;
+}
+
+@keyframes mymove {
+    from {
+        transform: translateY(0) rotate(70deg);
+    }
+    to {
+        transform: translateY(-100px) rotate(360deg);
+    }
+  }
