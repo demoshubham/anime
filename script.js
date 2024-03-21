@@ -1,6 +1,8 @@
 var playername=prompt("Enter Your Name");
 document.getElementById("pname").innerText=playername;
 
+alert("Catch All Red Color ball");
+
 // Select all elements with class "circle"
 const circles = document.querySelectorAll(".circle");
 const pointer = document.querySelector("#pointer");
