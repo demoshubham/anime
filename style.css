@@ -1,7 +1,12 @@
+@font-face {
+    font-family: main;
+    src: url(font/BruceForeverRegular-X3jd2.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: main;
 }
 #pointer{
     background-color: red;
@@ -15,6 +20,15 @@
     transform: translate(-50%,-50%);
     transition: transform 0.1s linear;
 }
+.scorecard{
+    position: fixed;
+    bottom:35%;
+    left:2%;
+    background-color: #33333352;
+    min-width:200px;
+    /* height: 150px; */
+    padding:1rem;
+}
 .page1{
     height: 100vh;
     width:100%;
@@ -22,11 +36,7 @@
     position:relative;
     overflow: hidden;
 }
-.page2{
-    height: 50vh;
-    width:100%;
-    background-color: seagreen;
-}
+
 .circle{
     background-color: seagreen;
     width:30px;
@@ -38,6 +48,13 @@
     transform: translate(-50%,-50%);
     transition: transform 0.1s ease;
 
+}
+.circle:nth-child(odd){
+    background-color: seagreen;
+}
+
+.circle:nth-child(even){
+    background-color: red;
 }
 
 .circle:nth-child(1){
